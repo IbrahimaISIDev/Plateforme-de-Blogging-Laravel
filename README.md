@@ -2,8 +2,8 @@
 
 ![Laravel](https://img.shields.io/badge/Laravel-11.x-FF2D20?style=for-the-badge&logo=laravel&logoColor=white)
 ![PHP](https://img.shields.io/badge/PHP-8.2+-777BB4?style=for-the-badge&logo=php&logoColor=white)
-![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-3.x-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white)
-![MySQL](https://img.shields.io/badge/MySQL-8.x-4479A1?style=for-the-badge&logo=mysql&logoColor=white)
+![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-4.x-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white)
+![PostgreSQL](https://img.shields.io/badge/PostgreSQL-16.x-336791?style=for-the-badge&logo=postgresql&logoColor=white)
 
 Une plateforme de blogging moderne et complète développée avec Laravel 11, permettant la gestion et la publication d'articles organisés par catégories.
 
@@ -45,7 +45,7 @@ Avant de commencer, assurez-vous d'avoir installé :
 - **Composer** >= 2.6
 - **Node.js** >= 18.x
 - **NPM** >= 9.x
-- **MySQL** >= 8.0 ou **PostgreSQL** >= 13
+- **PostgreSQL** >= 13 (ou MySQL >= 8.0)
 
 ## 🚀 Installation
 
@@ -53,6 +53,7 @@ Avant de commencer, assurez-vous d'avoir installé :
 
 ```bash
 git clone https://github.com/votre-username/plateforme-blogging.git
+https://github.com/IbrahimaISIDev/Plateforme-de-Blogging-Laravel
 cd plateforme-blogging
 ```
 
@@ -87,18 +88,18 @@ php artisan key:generate
 Modifier le fichier `.env` avec vos paramètres de base de données :
 
 ```env
-DB_CONNECTION=mysql
+DB_CONNECTION=pgsql
 DB_HOST=127.0.0.1
-DB_PORT=3306
+DB_PORT=5432
 DB_DATABASE=plateforme_blogging
-DB_USERNAME=root
+DB_USERNAME=votre_utilisateur
 DB_PASSWORD=votre_mot_de_passe
 ```
 
 Créer la base de données :
 
 ```sql
-CREATE DATABASE plateforme_blogging CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
+CREATE DATABASE plateforme_blogging;
 ```
 
 ### 6. Exécuter les migrations
@@ -310,11 +311,11 @@ APP_DEBUG=true
 APP_URL=http://localhost:8000
 
 # Base de données
-DB_CONNECTION=mysql
+DB_CONNECTION=pgsql
 DB_HOST=127.0.0.1
-DB_PORT=3306
+DB_PORT=5432
 DB_DATABASE=plateforme_blogging
-DB_USERNAME=root
+DB_USERNAME=postgres
 DB_PASSWORD=
 
 # Timezone
@@ -368,8 +369,8 @@ chmod -R 775 bootstrap/cache
 ## 📚 Technologies Utilisées
 
 - **Backend** : Laravel 11.x
-- **Frontend** : Blade Templates + Tailwind CSS 3.x
-- **Base de données** : MySQL 8.x
+- **Frontend** : Blade Templates + Tailwind CSS 4.x
+- **Base de données** : PostgreSQL 16.x
 - **Build Tool** : Vite
 - **PHP** : 8.2+
 - **Architecture** : MVC (Model-View-Controller)
@@ -494,14 +495,14 @@ Ce projet est sous licence MIT. Voir le fichier `LICENSE` pour plus de détails.
 
 ## 👤 Auteur
 
-**Votre Nom**
-- GitHub: [@votre-username](https://github.com/votre-username)
-- Email: votre.email@example.com
+**IbrahimaISIDev**
+- GitHub: [@IbrahimaISIDev](https://github.com/IbrahimaISIDev)
+- Email: sorydiallo371@gmail.com
 
 ## 🙏 Remerciements
 
 - [Laravel](https://laravel.com) - Framework PHP élégant
-- [Tailwind CSS](https://tailwindcss.com) - Framework CSS utility-first
+- [Tailwind CSS](https://tailwindcss.com) - Framework CSS modern design system
 - [Blade](https://laravel.com/docs/blade) - Moteur de templates Laravel
 
 ## 📞 Support
