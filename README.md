@@ -52,8 +52,8 @@ Avant de commencer, assurez-vous d'avoir installé :
 ### 1. Cloner le projet
 
 ```bash
-git clone https://github.com/votre-username/plateforme-blogging.git
-https://github.com/IbrahimaISIDev/Plateforme-de-Blogging-Laravel
+git clone https://github.com/IbrahimaISIDev/Plateforme-de-Blogging-Laravel.git
+
 cd plateforme-blogging
 ```
 
